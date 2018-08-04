@@ -27,6 +27,9 @@
       .speaker .thumb {position:absolute;left:0;top:50%;width:160px;height:160px;transform:translate(0,-50%)}
       .speaker h1 {font-size:25px;}
       .speaker p {margin:6px 6px 24px 0}
+      .header {display:flex;justify-content:space-between;position:sticky;top:0;left:0;right:0;background:#fff;padding:1em;z-index:1000;box-shadow:1px 1px 1px rgba(0,0,0,0.15)}
+      .header h1 {font-size:18px;font-weight:500;margin:0}
+      .registration {color:#2a45d8;font-weight:500;cursor:pointer;text-decoration:none}
       @media(max-width:768px) {
         .hero{margin:15px;}
         .schedule-time{font-size:16px;line-height:26px;color:#4768fd;padding:16px 0;text-align:center;flex-basis:66px}
@@ -44,14 +47,16 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
+    <header class="header">
+      <h1>GDG Korea WebTech</h1>
+      <a href="form.html" class="registration">Registration</a>
+    </header>
     <article>
       <div class="hero">
         <h1>Chrome Dev Meetup</h1>
         <h2>by GDG Korea WebTech</h2>
-        <p>
-          Chrome Dev Meetup은 Chrome 기술에 관심있는 다양한 개발자 분들을 위한 Session 및 Networking의 공간입니다.
-          Chrome의 최신 업데이트와 Chrome에서 지원하는 기술에 대한 다양한 정보를 함께 나눕니다.
-        </p>
+        <p>Chrome Dev Meetup은 Chrome 기술에 관심있는 다양한 개발자 분들을 위한 Session 및 Networking의 공간입니다.
+          Chrome의 최신 업데이트와 Chrome에서 지원하는 기술에 대한 다양한 정보를 함께 나눕니다.</p>
       </div>
       <div class="hero">
         <h1>Schedule</h1>
